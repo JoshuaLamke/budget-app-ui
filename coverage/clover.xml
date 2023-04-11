@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681095338922" clover="3.2.0">
-  <project timestamp="1681095338922" name="All files">
+<coverage generated="1681180828527" clover="3.2.0">
+  <project timestamp="1681180828527" name="All files">
     <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
     <file name="App.tsx" path="C:\Users\Joshua\Coding_Projects\Budget_App\budget-app\src\App.tsx">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
