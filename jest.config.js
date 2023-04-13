@@ -12,5 +12,19 @@ export default {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   testMatch: ['**/*.test.(ts|tsx)'],
-  setupFilesAfterEnv: ['<rootDir>/setupTests.ts']
+  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    "./src/**",
+    "!./src/main.tsx",
+    "!./src/vite-env.d.ts",
+  ],
+  coverageThreshold: {
+    global: {
+      branches: 85,
+      functions: 85,
+      lines: 85,
+      statements: 85,
+    }
+  },
 };
