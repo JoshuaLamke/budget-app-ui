@@ -1,8 +1,12 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import App from "../App";
 
-test("Renders the app", () => {
-  render(<App />);
-  expect(screen.getByText("Howdy:)")).toBeInTheDocument();
+describe("App", () => {
+  it("Renders the app", async () => {
+    render(<App />);
+    await waitFor(() => {
+      expect(screen.getByText("Login To LAV")).toBeInTheDocument();
+    });
+  });
 });
